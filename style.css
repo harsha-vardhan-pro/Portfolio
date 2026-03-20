@@ -23,82 +23,60 @@ body {
 }
 
 
+/* ========================= */
+/* 🔥 PREMIUM LOADER */
+/* ========================= */
+
 .home-loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    background: radial-gradient(circle at center, #0b0f1a, #05070f);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+/* 🔥 INSANE TEXT */
+.loader-text {
     font-size: 60px;
     font-weight: 800;
-    text-align: center;
     letter-spacing: 3px;
+    text-align: center;
 
-    background: linear-gradient(
-        90deg,
-        #00e6c3,
-        #3b82f6,
-        #00e6c3
-    );
-
+    background: linear-gradient(90deg, #7c3aed, #3b82f6, #7c3aed);
     background-size: 200%;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     animation: gradientFlow 4s linear infinite,
                glowPulse 2s ease-in-out infinite alternate;
-
-    text-shadow:
-        0 0 10px rgba(0,230,195,0.4),
-        0 0 30px rgba(59,130,246,0.3);
 }
 
-/* 🌊 GRADIENT FLOW */
+/* 🌊 MOVING GRADIENT */
 @keyframes gradientFlow {
     from { background-position: 0%; }
     to { background-position: 200%; }
 }
 
-/* ✨ GLOW PULSE */
+/* ✨ GLOW EFFECT */
 @keyframes glowPulse {
     from {
         text-shadow:
-            0 0 10px rgba(0,230,195,0.4),
-            0 0 20px rgba(59,130,246,0.2);
+            0 0 10px rgba(124,58,237,0.5),
+            0 0 20px rgba(59,130,246,0.3);
     }
     to {
         text-shadow:
-            0 0 20px rgba(0,230,195,0.7),
-            0 0 40px rgba(59,130,246,0.5);
+            0 0 25px rgba(124,58,237,0.8),
+            0 0 50px rgba(59,130,246,0.5);
     }
 }
-
-
-@keyframes glowText {
-    from {
-        text-shadow:
-            0 20px 40px rgba(0,230,195,0.4);
-    }
-    to {
-        text-shadow:
-            0 0 20px #00ffd5,
-            0 0 40px #00ffd5,
-            0 0 60px #00ffd5;
-    }
-}
-.home-loader::after {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 3px;
-    margin: 15px auto;
-
-    background: linear-gradient(90deg, #00e6c3, #3b82f6);
-    border-radius: 10px;
-
-    animation: lineGlow 2s infinite alternate;
-}
-
-@keyframes lineGlow {
-    from { box-shadow: 0 0 10px #00e6c3; }
-    to { box-shadow: 0 0 25px #3b82f6; }
-}
-
 
 nav {
     display: flex;
