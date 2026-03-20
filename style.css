@@ -87,6 +87,16 @@ body {
             0 0 60px #00ffd5;
     }
 }
+@keyframes glowPulse {
+    from {
+        opacity: 0.5;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(18px);
+    }
+}
 
 nav {
     display: flex;
