@@ -299,10 +299,7 @@ nav a:hover::after {
         text-align: center;
     }
 
-    .skills-left {
-        width: 100%;
-    }
-
+  
     /* REMOVE FLOAT EFFECT */
     .skill-list {
        
@@ -312,7 +309,7 @@ nav a:hover::after {
     /* FIX IMAGE POSITION */
     #photo {
        
-        margin: 20px auto !important;
+       
         display: block;
 
         width: 100%;
@@ -333,10 +330,7 @@ nav a:hover::after {
         text-align: center;
     }
 
-    /* REMOVE BAD OFFSET */
-    .contact-left i {
-        margin-left: 0;
-    }
+ 
 
     /* BETTER SPACING */
     .contact-right {
