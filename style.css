@@ -502,3 +502,124 @@ nav a:hover::after {
         text-align: center;
     }
 }
+/* ========================= */
+/* 📱 MOBILE ONLY (NO DESKTOP CHANGE) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    /* NAV STACK */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* CONTAINER */
+    .container {
+        padding: 60px 20px;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: auto;
+    }
+
+    /* ABOUT */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: auto;
+    }
+
+    /* SKILLS */
+    .skills-section {
+        flex-direction: column;
+    }
+
+    .skill-list {
+        width: 100%;
+        float: none; /* override only for mobile */
+    }
+
+    .skills-right {
+        justify-content: center;
+    }
+
+    .skills-image-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* PROJECTS */
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact-box {
+        flex-direction: column;
+    }
+
+    /* TEXT SCALE */
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+/* ========================= */
+/* 📟 TABLET ONLY (NO DESKTOP CHANGE) */
+/* ========================= */
+@media (max-width: 1024px) {
+
+    .hero,
+    .about,
+    .skills-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-image img {
+        width: 220px;
+    }
+}
+
+
+/* ========================= */
+/* 💻 LARGE SCREEN CENTERING */
+/* ========================= */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
