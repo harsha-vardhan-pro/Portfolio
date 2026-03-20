@@ -274,6 +274,24 @@ nav a:hover::after {
 /* 📱 ABOUT MOBILE FIX */
 /* ========================= */
 @media (max-width: 768px) {
+     .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 25px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: auto;
+    }
 
     .about {
         flex-direction: column;
