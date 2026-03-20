@@ -317,6 +317,12 @@ nav a:hover::after {
     background: #1a1a1a;
     padding: 20px;
 }
+.tech {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
 
 
 /* ========================= */
