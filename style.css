@@ -62,10 +62,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: gradientFlow 4s linear infinite;
+    animation: gradientFlow 4s linear infinite,
+                glowPulse 2s ease-in-out infinite alternate;
 
     /* controlled glow (no blur) */
-    text-shadow: 0 0 6px rgba(124,58,237,0.2);
+    text-shadow: 0 0 8px rgba(124,58,237,0.2);
 
     -webkit-font-smoothing: antialiased;
 }
