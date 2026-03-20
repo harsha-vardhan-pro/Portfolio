@@ -161,6 +161,16 @@ nav a:hover::after {
         background-position: 200%;
     }
 }
+.section-line {
+    width: 80px;
+    height: 3px;
+    margin: 10px 0 25px;
+
+    background: linear-gradient(90deg, #00e6c3, #3b82f6);
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,230,195,0.4);
+}
 
 .container {
     padding: 100px 50px;
@@ -309,13 +319,17 @@ nav a:hover::after {
 .card:hover {
     background: linear-gradient(135deg, #00e6c3, #3b82f6);
     color: black;
-    transform: translateY(-10px) scale(1.03);
+    transform: translateY(-10px) scale(1.2);
     box-shadow: 0 20px 40px rgba(0,230,195,0.4);
 }
 
 .card {
-    background: #1a1a1a;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
     padding: 20px;
+    transition: 0.4s;
 }
 .tech {
     font-size: 13px;
