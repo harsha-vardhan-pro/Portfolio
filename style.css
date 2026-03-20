@@ -305,18 +305,18 @@ nav a:hover::after {
 
     /* REMOVE FLOAT EFFECT */
     .skill-list {
-        float: none !important;
+       
         width: 100%;
     }
 
     /* FIX IMAGE POSITION */
     #photo {
-        float: none !important;
+       
         margin: 20px auto !important;
         display: block;
 
-        width: 200px;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
 
 }
