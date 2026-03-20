@@ -63,12 +63,12 @@ body {
     -webkit-text-fill-color: transparent;
 
     animation: gradientFlow 4s linear infinite,
-                glowPulse 2s ease-in-out infinite alternate;
+               glowPulse 1.5s ease-in-out infinite alternate;
 
-    /* controlled glow (no blur) */
-    text-shadow: 0 0 8px rgba(124,58,237,0.2);
-
-    -webkit-font-smoothing: antialiased;
+    /* CLEAN GLOW (NO BLUR) */
+    text-shadow:
+        0 0 8px rgba(124,58,237,0.5),
+        0 0 15px rgba(59,130,246,0.4);
 }
 
 @keyframes gradientFlow {
@@ -89,12 +89,14 @@ body {
 }
 @keyframes glowPulse {
     from {
-        opacity: 0.5;
-        filter: blur(10px);
+        text-shadow:
+            0 0 6px rgba(124,58,237,0.4),
+            0 0 12px rgba(59,130,246,0.3);
     }
     to {
-        opacity: 1;
-        filter: blur(18px);
+        text-shadow:
+            0 0 12px rgba(124,58,237,0.7),
+            0 0 25px rgba(59,130,246,0.5);
     }
 }
 
