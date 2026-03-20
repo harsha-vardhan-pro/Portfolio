@@ -42,20 +42,29 @@ body {
 }
 
 /* 🔥 INSANE TEXT */
+/* 🔥 INSANE TEXT (FIXED - NO BLUR) */
 .loader-text {
     font-size: 60px;
     font-weight: 800;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px; /* reduced for sharpness */
     text-align: center;
 
-    background: linear-gradient(90deg, #7c3aed, #3b82f6, #7c3aed);
+    background: linear-gradient(90deg, #7c3aed, #3b82f6);
     background-size: 200%;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: gradientFlow 4s linear infinite,
-               glowPulse 2s ease-in-out infinite alternate;
+    animation: gradientFlow 4s linear infinite;
+
+    /* 🔥 CONTROLLED GLOW (NO BLUR) */
+    text-shadow: 0 0 8px rgba(124,58,237,0.3);
+
+    /* 🔥 SHARPER TEXT RENDERING */
+    -webkit-font-smoothing: antialiased;
+
+    /* 🔥 OPTIONAL EDGE SHARPNESS */
+    -webkit-text-stroke: 0.3px rgba(255,255,255,0.2);
 }
 
 /* 🌊 MOVING GRADIENT */
@@ -63,7 +72,6 @@ body {
     from { background-position: 0%; }
     to { background-position: 200%; }
 }
-
 /* ✨ GLOW EFFECT */
 
 .loader-text::after {
