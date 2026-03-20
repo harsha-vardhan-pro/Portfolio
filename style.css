@@ -76,15 +76,13 @@ body {
     to { background-position: 200%; }
 }
 @keyframes glowPulse {
-    from {
-        text-shadow:
-            0 0 6px rgba(124,58,237,0.25),
-            0 0 10px rgba(59,130,246,0.15);
+     from {
+        opacity: 0.5;
+        filter: blur(10px);
     }
     to {
-        text-shadow:
-            0 0 12px rgba(124,58,237,0.4),
-            0 0 20px rgba(59,130,246,0.25);
+        opacity: 1;
+        filter: blur(18px);
     }
 }
 
