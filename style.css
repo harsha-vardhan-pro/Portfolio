@@ -65,31 +65,7 @@ body {
 }
 /* 🔥 INSANE TEXT */
 /* 🔥 INSANE TEXT (FIXED - NO BLUR) */
-.loader-text {
-    font-size: 60px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    text-align: center;
 
-    background: linear-gradient(90deg, #7c3aed, #3b82f6);
-    background-size: 200%;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* ✅ FIXED */
-
-    animation: gradientFlow 4s linear infinite;
-
-    text-shadow: 0 0 6px rgba(124,58,237,0.25); /* reduced glow */
-
-    -webkit-font-smoothing: antialiased;
-}
-
-/* 🌊 MOVING GRADIENT */
-@keyframes gradientFlow {
-    from { background-position: 0%; }
-    to { background-position: 200%; }
-}
-/* ✨ GLOW EFFECT */
 
 
 nav {
