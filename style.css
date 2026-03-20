@@ -336,13 +336,21 @@ nav a:hover::after {
     /* IMAGE BELOW WITH GOOD SIZE */
     #photo {
         display: block;
+
+        /* KILL DESKTOP BEHAVIOR */
         float: none !important;
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
 
-        margin: 30px auto 0 auto;
+        /* CENTER PROPERLY */
+        margin: 30px auto;
 
-        width: 80%;
-        max-width: 300px;
+        /* PROPER SIZE */
+        width: 70%;
+        max-width: 260px;
         height: auto;
+
+        border-radius: 15px;
     }
    
     
