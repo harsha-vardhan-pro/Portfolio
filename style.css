@@ -318,6 +318,30 @@ nav a:hover::after {
         width: 100%;
         height: 100%;
     }
+     .contact-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-left {
+        text-align: center;
+    }
+
+    /* REMOVE BAD OFFSET */
+    .contact-left i {
+        margin-left: 0;
+    }
+
+    /* BETTER SPACING */
+    .contact-right {
+        margin-top: 30px;
+    }
 
 }
 
@@ -528,21 +552,4 @@ nav a:hover::after {
     box-shadow: 0 0 20px #00ffd5;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 60px 20px;
-    }
 
-    nav ul {
-        gap: 15px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero,
-    .skills-section {
-        flex-direction: column;
-        text-align: center;
-    }
-}
