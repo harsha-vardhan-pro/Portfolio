@@ -46,25 +46,20 @@ body {
 .loader-text {
     font-size: 60px;
     font-weight: 800;
-    letter-spacing: 1.5px; /* reduced for sharpness */
+    letter-spacing: 1.5px;
     text-align: center;
 
     background: linear-gradient(90deg, #7c3aed, #3b82f6);
     background-size: 200%;
 
     -webkit-background-clip: text;
-    -webkit-text-fill-color:lightpurple;
+    -webkit-text-fill-color: transparent; /* ✅ FIXED */
 
     animation: gradientFlow 4s linear infinite;
 
-    /* 🔥 CONTROLLED GLOW (NO BLUR) */
-    text-shadow: 0 0 8px rgba(124,58,237,0.3);
+    text-shadow: 0 0 6px rgba(124,58,237,0.25); /* reduced glow */
 
-    /* 🔥 SHARPER TEXT RENDERING */
     -webkit-font-smoothing: antialiased;
-
-    /* 🔥 OPTIONAL EDGE SHARPNESS */
-    -webkit-text-stroke: 0.3px rgba(255,255,255,0.2);
 }
 
 /* 🌊 MOVING GRADIENT */
@@ -85,6 +80,10 @@ body {
     border-radius: 10px;
 
     animation: lineGlow 2s infinite alternate;
+}
+@keyframes lineGlow {
+    from { box-shadow: 0 0 6px #7c3aed; }
+    to { box-shadow: 0 0 12px #3b82f6; }
 }
 
 
