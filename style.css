@@ -77,6 +77,23 @@ body {
             0 0 50px rgba(59,130,246,0.5);
     }
 }
+.loader-text::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 15px auto;
+
+    background: linear-gradient(90deg, #7c3aed, #3b82f6);
+    border-radius: 10px;
+
+    animation: lineGlow 2s infinite alternate;
+}
+
+@keyframes lineGlow {
+    from { box-shadow: 0 0 10px #7c3aed; }
+    to { box-shadow: 0 0 30px #3b82f6; }
+}
 
 nav {
     display: flex;
