@@ -346,8 +346,8 @@ nav a:hover::after {
         margin: 30px auto;
 
         /* PROPER SIZE */
-        width: 70%;
-        max-width: 260px;
+        width: 400px;
+        max-width: 600px;
         height: auto;
 
         border-radius: 15px;
