@@ -293,6 +293,31 @@ nav a:hover::after {
         width: 220px;
         height: auto;
     }
+     .skills-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-left {
+        width: 100%;
+    }
+
+    /* REMOVE FLOAT EFFECT */
+    .skill-list {
+        float: none !important;
+        width: 100%;
+    }
+
+    /* FIX IMAGE POSITION */
+    #photo {
+        float: none !important;
+        margin: 20px auto !important;
+        display: block;
+
+        width: 200px;
+        height: auto;
+    }
 
 }
 
