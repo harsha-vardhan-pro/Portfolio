@@ -74,6 +74,18 @@ body {
     from { background-position: 0%; }
     to { background-position: 200%; }
 }
+@keyframes glowPulse {
+    from {
+        text-shadow:
+            0 0 6px rgba(124,58,237,0.25),
+            0 0 10px rgba(59,130,246,0.15);
+    }
+    to {
+        text-shadow:
+            0 0 12px rgba(124,58,237,0.4),
+            0 0 20px rgba(59,130,246,0.25);
+    }
+}
 
 
 nav {
