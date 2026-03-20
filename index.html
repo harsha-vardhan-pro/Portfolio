@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <style>
+        p{
+            color: blanchedalmond;
+        }
+    </style>
+
+
+<div class="home-loader">
+    <h1>Think • Build • Automate</h1>
+</div>
+
+<nav>
+    <div class="logo-container">
+    <a href="index.html" class="logo">
+        Harsha <span>| DevOps</span>
+    </a>
+    <div class="nav-line"></div>
+   
+</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+</nav>
+ 
+
+<div class="container hero">
+
+    <div class="hero-text" style="font-size: 25px;  text-align: center;" >
+        <h1 >Hi, I’m Harsha Vardhan</h1>
+       <h2 class="typing">Aspiring Cloud & DevOps Engineer.</h2>
+        <p>Currently pursuing Computer Science Engineering at Amrita University and working on real-world projects.</p>
+    </div>
+
+    <div class="hero-image">
+        <img src="me.jpeg" alt="profile">
+    </div>
+
+</div>
+
+
+<script>
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".home-loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 800);
+
+    }, 1500);
+});
+</script>
+
+</body>
+</html>
